@@ -1,0 +1,10 @@
+s3Upload:
+  bucket: 'name_of_s3_bucket'
+  key: 'foo/bar/abc/'
+  fileName: 'data/test/hello_world.json'
+  extension: '_load.json'
+  region: 'us-east-1'
+  ratePerSec: 1
+  duration: 2
+  concurrentRequests: 1
+  # add support for randomizing certain fields like post config

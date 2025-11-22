@@ -1,0 +1,30 @@
+postWithoutReplacement:
+  method: "POST"
+  clientId: "client_id"
+  clientSecret: "client_secret"
+  scope: "scope"
+  baseUrl: "https://baseUrl.com/"
+  endpoint: "api/v1/"
+  ratePerSec: 2
+  duration: 2
+  concurrentRequests: 3
+  contentType: "application/xml"
+  expectedStatusCode: 202
+  fileName: "data/test/hello_world.xml"
+
+postWithReplacement:
+  method: "POST"
+  clientId: "client_id"
+  clientSecret: "client_secret"
+  scope: "scope"
+  baseUrl: "https://baseUrl.com/"
+  endpoint: "api/v1/"
+  ratePerSec: 1
+  duration: 1
+  concurrentRequests: 3
+  contentType: "application/json"
+  expectedStatusCode: 200
+  fileName: "data/test/hello_world.json"
+  replaceParams:
+    - key: "{{random}}"
+      value: "UUID"

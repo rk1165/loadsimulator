@@ -1,0 +1,21 @@
+kafkaOauth:
+  clientId: "client_id"
+  clientSecret: "client_secret"
+  topic: "name_of_the_topic"
+  broker: "broker_url"
+  fileName: "data/test/hello_world.txt"
+  ratePerSec: 1
+  duration: 1
+  concurrentRequests: 1
+  authentication: "oauth"
+
+kafkaScram:
+  username: "user_name"
+  password: "pass_word"
+  topic: "topic_name"
+  broker: "broker_url"
+  fileName: "data/test/hello_world.txt"
+  ratePerSec: 1
+  duration: 1
+  concurrentRequests: 1
+  authentication: "scram"

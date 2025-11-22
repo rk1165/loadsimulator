@@ -1,0 +1,33 @@
+getByPathVariable:
+  method: "GET"
+  clientId: "client_id"
+  clientSecret: "client_secret"
+  scope: "scope_of_get_call_by_path_variable"
+  baseUrl: "https://baseUrl.com/"
+  endpoint: "api/v1/{id}"
+  ratePerSec: 3
+  duration: 3
+  concurrentRequests: 5
+  contentType: "application/json"
+  expectedStatusCode: 200
+  pathVariables:
+    - key: "id"
+      value: AB12345
+
+getByQueryParams:
+  method: "GET"
+  clientId: "client_id"
+  clientSecret: "client_secret"
+  scope: "scope_of_get_call_by_query_params"
+  baseUrl: "https://baseUrl.com/"
+  endpoint: "api/v1/"
+  ratePerSec: 5
+  duration: 5
+  concurrentRequests: 3
+  contentType: "application/json"
+  expectedStatusCode: 200
+  queryParams:
+    - key: "orderNumber"
+      value: "ORDER1234"
+    - key: "orderType"
+      value: "SALES_ORDER"
